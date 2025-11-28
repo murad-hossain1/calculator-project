@@ -1,86 +1,102 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
 }
 
-html{
-    scroll-behavior: smooth;
-    font-family: "Courgette", cursive;
+#container{
+    height: 100vh;
+    background-image: url("https://i.ibb.co.com/2bkhr5c/Pngtree-math-chalkboard-with-school-supplies-16483537.png");
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.calculator{
-    background-color: aqua;
-    margin: auto;
-    height: 460px;
-    width: 345px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 3px solid brown;
-    box-shadow: 0 8px 16px 0;
-    transition: 0.4s;
-}
-
-.calculator:hover{
-    box-shadow: 0 16px 32px 0;
-}
-
-h2{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 400;
-    text-shadow: 0 2px 3px;
-}
-
-.calculator__head{
-    text-align: center;
+#calculator{
+    width: 320px;
+    height: 510px;
+    background: #9df8ff;
+    margin: 0 auto;
+    top: 60px;
+    position: relative;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 0 13px 13px 0 rgba(0, 0, 0, 0.8);
 }
 
 #result{
+    height: 120px;
+    background-color: white;
+    padding: 5px;
+    margin: 0 15px 20px 15px;
+    position: relative;
+    top: 10px;
+    border: inset;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#history{
+    height: 30px;
     text-align: right;
+    margin: 0 15px;
+    color: #000000;
+    font-size: 15px;
+}
+#output{
     height: 70px;
-    width: 300px;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    border: none;
-    box-shadow: 0 2px 5px 0;
-}
-
-.calculator__body{
-    text-align: center;
-    height: 380px;
-    width: 345px;
-    margin: auto;
-    margin-top: 5px;
-}
-
-.btn{
-    height: 3.6rem;
-    width: 3.6rem;
-    margin: 3px;
-    font-size: 1rem;
+    text-align: right;
+    margin: 0 15px;
+    color: #000000; 
+    font-size: 35px;
     font-weight: bold;
-    background-color: blueviolet;
+}
+#keyboard{
+    height: 430px;
+}
+
+.oparator, .number, .empty{
+    width: 60px;
+    height: 60px;
+    margin: 5px 10px;
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid gray;
+    box-shadow: 0 2px 2px 1px black;
+}
+
+.number{
+    background-color: crimson;
     color: white;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px 0 black;
-    transition: 0.4s;
 }
 
-.btn:hover{
-    box-shadow: 0 10px 20px 0 black;
-    background-color: dimgray;
-    transform: scale(1.1);
+.empty{
+    background-color: purple;
+    color: white;
 }
 
-.btn-style1{
-    background-color: brown;
+#clear, #backspace{
+    background-color: orange;
+    color: black;
 }
 
-.btn-style2{
-    background-color:magenta;
+.oparator{
+    background-color: teal;
+    color: white;
 }
 
-.btn-style3{
-    background-color: chocolate;
+.oparator, .number{
+    cursor: pointer;
 }
